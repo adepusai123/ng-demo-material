@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<mat-card>
+  <mat-card-title>Table Component</mat-card-title>
+  <mat-card-content>
+    <app-table [columns]="columns" [rows]="rows"></app-table>
+  </mat-card-content>
+  <mat-card-actions #tbl>
+    <button mat-button (click)="addRow()"> Add Row</button>
+    <button mat-button (click)="addCol()"> Add Col</button>
+  </mat-card-actions>
+  <mat-card-footer></mat-card-footer>
+</mat-card>
